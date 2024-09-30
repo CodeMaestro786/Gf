@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2e6ff;
+    color: #543d7a;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    border: 3px solid #543d7a;
+    border-radius: 15px;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.greeting, .message, .question {
+    font-size: 26px;
+    margin: 15px 0;
+}
+
+.heart {
+    font-size: 80px;
+    margin: 20px 0;
+}
+
+.yes-button, .no-button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 40px;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.yes-button:hover {
+    background-color: #e8554b;
+    transform: scale(1.05);
+}
+
+.no-button {
+    background-color: #6c757d;
+}
+
+.no-button:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+
+.footer-text {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #856d92;
+}

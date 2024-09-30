@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Go Out With Me?</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function sendWhatsApp(message) {
+            const phoneNumber = '+27642152212'; // Replace with your WhatsApp number (including country code)
+            const textMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${textMessage}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌹 A Special Question Just for You 🌹</h1>
+        </header>
+        <main>
+            
+            <p class="greeting">Hey there,</p>
+            <p class="message">I've been thinking about how truly amazing you are and how much I'd love to spend some time together.</p>
+            <div class="heart">
+                ❤️
+            </div>
+            <p class="question">So, would you make me the happiest person and go out with me?</p>
+            <button class="yes-button" onclick="sendWhatsApp('Yay! Can\'t wait to go out on an adventure with you! 😊💕')">Absolutely! ❤️</button>
+            <button class="no-button" onclick="sendWhatsApp('Oh, that’s okay! Let’s have fun as friends! 😊💔')">Maybe, let’s be friends! 💔</button>
+        </main>
+        <footer>
+            <p class="footer-text">✨ With love, Muhammed Azhar Syed ✨</p>
+        </footer>
+    </div>
+</body>
+</html>
